@@ -15,3 +15,10 @@
 #resume{
     padding-top: 3em;
 }
+
+/* ///// SKILLS ///// */
+#capPic, #apiPic, #rmsPic, #icePic{
+    padding-right: 0em;
+    padding-left: 0em;
+}
+
