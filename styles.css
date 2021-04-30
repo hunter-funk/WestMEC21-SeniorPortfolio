@@ -3,6 +3,12 @@ body{
 }
 ul{
     list-style: none;
+    padding-left: 0;
+}
+#skillsList li{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1em;
 }
 
 #dev, #html5, #library, #api, #ice{
@@ -40,6 +46,9 @@ ul{
     background-color: grey;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
+}
+#contact .col-4:hover{
+    color: white;
 }
 
 /* #contact h2{
