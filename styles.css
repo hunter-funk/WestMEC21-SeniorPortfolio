@@ -5,6 +5,11 @@ ul{
     list-style: none;
     padding-left: 0;
 }
+
+/* ///// SKILLS ///// */
+#skills{
+    font-size: 1.2em;
+}
 #skillsList li{
     padding-top: 1em;
     padding-bottom: 1em;
