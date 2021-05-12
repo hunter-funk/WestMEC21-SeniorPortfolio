@@ -20,16 +20,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li id="navRes" class="nav-item" onclick="focusOn(0)">
             <a class="nav-link" href="#">Resume</a>
           </li>
-          <li class="nav-item">
+          <li id="navSkills" class="nav-item" onclick="focusOn(1)">
             <a class="nav-link" href="#">Skills</a>
           </li>
-          <li class="nav-item">
+          <li id="navWork" class="nav-item" onclick="focusOn(2)">
             <a class="nav-link" href="#">Work</a>
           </li>
-          <li class="nav-item">
+          <li id="navCont" class="nav-item" onclick="focusOn(3)">
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
@@ -91,22 +91,28 @@
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
           data-bs-content="State testing for Coding CTE in my home state of Arizona">CTE Arizona State Certified</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="">Javascript Specialist</li>
+          data-bs-content="Certified in front-end and back-end development, and protecting user data.">Javascript Specialist</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have 4 years of experience in developing websites and web applications.">Diligent</li>
+          data-bs-content="I have utilized both to and communicate with fellow coders to finish projects.">Github/GitKraken</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have 4 years of experience in developing websites and web applications.">Leadership</li>
+          data-bs-content="I have had numerous experiences working and managing other programmers and helping clients.">Leadership</li>
         </ul>
       </div>
       <div id="library" class="col-md-3 border">
         <h3><u>Libraries and Databases</u></h3>
         <ul id="skillsList" class="align-items-center">
-          <li>Bootstrap</li>
-          <li>Material-UI</li>
-          <li>Mongoose</li>
-          <li>MongoDB</li>
-          <li>Firebase</li>
-          <li>Firestore</li>
+          <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
+          data-bs-content="I utilize Bootstrap for a majority of my projects and am comfortable with its documentation.">Bootstrap</li>
+          <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
+          data-bs-content="Utilizes React.js for front-end development.">Material-UI</li>
+          <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
+          data-bs-content="Have knowledge of Moongoose and managing dependencies and data entry.">Mongoose</li>
+          <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
+          data-bs-content="Capable of managing databases uitilizing Moongoose.">MongoDB</li>
+          <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
+          data-bs-content="Have applied knowledge and have used Firebase for clients in the past.">Firebase</li>
+          <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
+          data-bs-content="Similarly to MongoDB, I am capable of managing databases and retreiving data for web applications.">Firestore</li>
         </ul>
       </div>
     </div>
@@ -196,6 +202,7 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
     <script src="popovers.js" async></script>
+    <script src="navbar.js" async></script>
 </body>
 
 </html>

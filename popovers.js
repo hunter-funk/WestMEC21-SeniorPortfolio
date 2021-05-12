@@ -5,4 +5,4 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
 var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
     container: 'focus'
-})
+});
