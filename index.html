@@ -9,7 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet" async />
+
 </head>
+<body>
   <!-- /// NAV BAR /// -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -21,16 +23,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li id="navRes" class="nav-item" onclick="focusOn(0)">
-            <a class="nav-link" href="#">Resume</a>
+            <a class="nav-link" href="#Uix">Resume</a>
           </li>
           <li id="navSkills" class="nav-item" onclick="focusOn(1)">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#html5">Skills</a>
           </li>
           <li id="navWork" class="nav-item" onclick="focusOn(2)">
-            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="#capstone">Work</a>
           </li>
           <li id="navCont" class="nav-item" onclick="focusOn(3)">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -47,6 +49,7 @@
           should have its own flare that does not distract or inhibit the user. Nothing is more frustrating than when navigating
           a site is its barrier for use and frequent traffic.
         </p>
+        <!-- Button trigger modal -->
       </div>
     </div>
     <div id="dev" class="col-lg-6 text-end border">
@@ -125,7 +128,7 @@
       
       <div id="examples" class="">
         
-        <div id="capstone" class="row border align-items-center text-center">
+        <div id="capstone" class="row border align-items-center text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div class="col-sm-5">
               <h3>Capstone Project - Tanuki Games</h3>
           </div>
@@ -134,7 +137,7 @@
           </div>
         </div>
         
-        <div id="api" class="row border justify-content-end text-center align-items-center">
+        <div id="api" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div id="apiPic" class="col">
               <img src="images/api_banner.png" class="img-fluid"/>
           </div>
@@ -143,7 +146,7 @@
           </div>
         </div>
         
-        <div id="rms" class="row border align-items-center text-center">
+        <div id="rms" class="row border align-items-center text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div class="col-sm-5">
             <h3>RMS Project - Law and Public Safety</h3>
           </div>
@@ -152,7 +155,7 @@
           </div>
         </div>
         
-        <div id="ice" class="row border justify-content-end text-center align-items-center">
+        <div id="ice" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <div id="apiPic" class="col">
               <img src="images/ice_banner.png" class="img-fluid"/>
           </div>
@@ -198,11 +201,31 @@
     </div> -->
   </footer>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          hello
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="navbar.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
     <script src="popovers.js" async></script>
-    <script src="navbar.js" async></script>
+
 </body>
 
 </html>

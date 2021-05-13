@@ -1,8 +1,22 @@
-const resume = document.getElementById("navRes");
-const skills = document.getElementById("navSkills");
-const work = document.getElementById("navWork");
-const contact = document.getElementById("navCont");
+var resume = document.getElementById("resume");
+var skills = document.getElementById("skills");
+var work = document.getElementById("work");
+var contact = document.getElementById("contact");
 
-focusOn = (e) => {
-    
+function focusOn(nav) {
+    if(nav == 0){
+        resume.focus();
+        console.log(`trigger`);
+    }else if(nav == 1){
+        skills.focus();
+        console.log(`trigger`);
+    }else if(nav == 2){
+        work.focus();
+        console.log(`trigger`);
+    }else if(nav == 3){
+        contact.focus();
+        console.log(`trigger`);
+    }
 }
+
+
