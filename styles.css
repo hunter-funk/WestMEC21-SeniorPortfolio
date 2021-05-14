@@ -1,9 +1,13 @@
 body{
     width: 100%;
+    /* background-color:; */
 }
 ul{
     list-style: none;
     padding-left: 0;
+}
+#resume, #skills, #work{
+    padding-bottom: 1em;
 }
 
 /* ///// SKILLS ///// */
@@ -17,14 +21,14 @@ ul{
 }
 
 #dev, #html5, #library, #api, #ice{
-    background-color: rgba(0, 0, 0, 0.3)
+    background-color: #2978b5;
 }
 
-#skills, #work, #Uix, #dev{
+#Uix, #dev{
     padding-top: 1.5em;
 }
 
-#Uix, #dev, #work{
+#Uix, #dev{
     padding-bottom: 1.5em;
 }
 
@@ -33,11 +37,29 @@ ul{
 }
 
 /* ///// Resume ///// */
+#resHead{
+    padding-bottom: 5em;
+    padding-top: 5em;
+    background-color: #fbe0c4;
+    margin-bottom: .5em;
+}
 #Uix{
     padding-left: 4em;
+    background-color: #8ab6d6;
 }
 #dev{
     padding-right: 4em;
+}
+
+/* ///// PREVIOUS WORK ///// */
+#workHead, #skillsHead, #aboutHead{
+    padding-bottom: 3em;
+    padding-top: 3em;
+    background-color: #fbe0c4;
+    margin-bottom: .5em;
+}
+#capstone, #rms{
+    background-color: #8ab6d6;
 }
 
 /* ///// SKILLS ///// */
@@ -45,17 +67,28 @@ ul{
     padding-right: 0em;
     padding-left: 0em;
 }
+#cert{
+   background-color: #8ab6d6;
+}
 
 /* ///// CONTACT ///// */
 #contact {
-    background-color: grey;
+    background-color: #0061a8;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
-#contact .col-4:hover{
+#contact .col-4:hover, #contact a:hover{
     color: white;
 }
-
+#about{
+    padding-left: 5em;
+    padding-right: 5em;
+    color: white;
+}
+#contact a{
+    text-decoration: none;
+    color: black;
+}
 /* #contact h2{
     font-size: 4em;
     padding-left: 2em;

@@ -23,16 +23,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li id="navRes" class="nav-item" onclick="focusOn(0)">
-            <a class="nav-link" href="#Uix">Resume</a>
+            <a class="nav-link" href="#resHead">Resume</a>
           </li>
           <li id="navSkills" class="nav-item" onclick="focusOn(1)">
-            <a class="nav-link" href="#html5">Skills</a>
+            <a class="nav-link" href="#skillsHead">Skills</a>
           </li>
           <li id="navWork" class="nav-item" onclick="focusOn(2)">
-            <a class="nav-link" href="#capstone">Work</a>
+            <a class="nav-link" href="#workHead">Work</a>
           </li>
           <li id="navCont" class="nav-item" onclick="focusOn(3)">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#aboutHead">Contact</a>
           </li>
         </ul>
       </div>
@@ -41,8 +41,9 @@
 
   <!-- /// RESUME /// -->
   <div id="resume" class="row justify-content-lg-center">
+    <h1 id="resHead" class="text-center">My name is Hunter Funk, <br/> and I am a...</h1>
     <div id="Uix" class="col-lg-6 border">
-      <h2>UI/UX Design</h2>
+      <h2>UI/UX Designer</h2>
       <div class="row">
         <p class="col-sm-8">
           User interactivity is integral to me when designing projects. The layout, prompts, and traversal of the site
@@ -53,7 +54,7 @@
       </div>
     </div>
     <div id="dev" class="col-lg-6 text-end border">
-      <h2>Front End Development</h2>
+      <h2>Front End Developer</h2>
       <div class="row justify-content-end">
         <p class="col-sm-8">
           A site should be as beautiful as it is to use. What the user sees leaves an impression as the more professional 
@@ -66,6 +67,7 @@
 
   <!-- /// SKILLS /// -->
   <div id="skills" class="justify-content-md-center text-center">
+    <h1 id="skillsHead">Why I am Qualified</h1>
     <div class="row justify-content-lg-center">
       <div id="html5" class="col-md-3 border">
         <h3><u>HTML 5</u></h3>
@@ -96,7 +98,7 @@
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
           data-bs-content="Certified in front-end and back-end development, and protecting user data.">Javascript Specialist</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have utilized both to and communicate with fellow coders to finish projects.">Github/GitKraken</li>
+          data-bs-content="I have utilized both to manage and communicate with fellow coders to finish projects.">Github/GitKraken</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
           data-bs-content="I have had numerous experiences working and managing other programmers and helping clients.">Leadership</li>
         </ul>
@@ -123,12 +125,12 @@
 
   <!-- /// WORK /// -->
   <div id="work" class="justify-content-lg-center row">
-    <div class="col-lg-10">
-      <h1 class="text-center">Previous Work</h1>
-      
+    
+      <h1 id="workHead" class="text-center">Previous Work</h1>
+      <div class="col-lg-10">  
       <div id="examples" class="">
         
-        <div id="capstone" class="row border align-items-center text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div id="capstone" class="row border align-items-center text-center" data-bs-toggle="modal" data-bs-target="#capModal">
           <div class="col-sm-5">
               <h3>Capstone Project - Tanuki Games</h3>
           </div>
@@ -137,7 +139,7 @@
           </div>
         </div>
         
-        <div id="api" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div id="api" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal" data-bs-target="#apiModal">
           <div id="apiPic" class="col">
               <img src="images/api_banner.png" class="img-fluid"/>
           </div>
@@ -146,7 +148,7 @@
           </div>
         </div>
         
-        <div id="rms" class="row border align-items-center text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div id="rms" class="row border align-items-center text-center" data-bs-toggle="modal" data-bs-target="#rmsModal">
           <div class="col-sm-5">
             <h3>RMS Project - Law and Public Safety</h3>
           </div>
@@ -155,7 +157,7 @@
           </div>
         </div>
         
-        <div id="ice" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div id="ice" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal" data-bs-target="#iceModal">
           <div id="apiPic" class="col">
               <img src="images/ice_banner.png" class="img-fluid"/>
           </div>
@@ -169,58 +171,136 @@
   </div>
 
   <!-- /// CONTACT /// -->
-  <footer id="contact" class="row text-center justify-content-center">
-      <div class="col-4">
-        <h5>hunter.d.funk@gmail.com</h5>
-        <img src="/images/inboxes.svg" width="50px" height="50px">
-      </div>
-      <div class="col-4">
-        <h5>github.com/hunter-funk</h5>
-        <img src="/images/github.svg" width="50px" height="50px">
-      </div>
-      <div class="col-4">
-        <h5>Linkedin</h5>
-        <img src="/images/linkedin.svg" width="50px" height="50px">
-      </div>
-  </footer>
-
-
-  <!-- <footer class="row" id="contact">
+  <h1 id="aboutHead" class="text-center">Contact Me</h1>
+  <footer class="row" id="contact">
     <div class="col-sm-9">
-      <div class="row">
-        <h2>Contact</h2>
-      </div>
-      <ul class="row text-end">
-        <li>Email: hunter.d.funk@gmail.com</li>
-        <li>Github: hunter-funk</li>
-        <li>Linkedin: Hunter Funk</li>
-      </ul>
-    </div> -->
-    <!-- <div class="col">
+        <p id="about">
+         <i> 
+           My name is Hunter Funk and I have always had a passion for video games. I am an intelligent
+          and hardworking person, so life was very stressful with how much work I had and fulfilling the 
+          expectations people had around me. However, video games have always served as an escape for me
+          to relax and get away from my responsibilities for a moment. They allow players all over the world
+          to occupy themselves and explore their grandest fantasies in a way other media cannot. I decided
+          that I wanted to become a developer to share with people new experiences and hours of escape that
+          developers before my time gave me. I began Computer Programming in high school as part of a CTE 
+          school, West-MEC Central Campus, to take any opportunity I could to get started on my journey. 
+          While their I learned copious amounts about professionalism, Web Development, and how coding 
+          languages work. I am self-driven and have taken a new passion in learning digital art as well, 
+          and I am fascinated by animation and digital illustration. I look forward to hearing what projects
+          and passions you would share with me. I currently attend Arizona State University at its Tempe 
+          campus while studying for a BS in Computer Science.
+        </i>
+        </p>
+    </div>
+    <div class="col">
       <img id="contactPic" class="justify-content-center align-middle" src="images/aigis.png" width="200px" height="200px"/>
-    </div> -->
+    </div>
+    <div id="contact" class="row text-center justify-content-center">
+        <div class="col-4">
+          <h5>hunter.d.funk@gmail.com</h5>
+          <img src="/images/inboxes.svg" width="25px" height="25px">
+        </div>
+        <div class="col-4">
+          <h5><a href="https://github.com/hunter-funk">github.com/hunter-funk</a></h5>
+          <img src="/images/github.svg" width="25px" height="25px">
+        </div>
+        <div class="col-4">
+          <h5><a href="https://www.linkedin.com/in/hunter-funk-89a5081b6">Linkedin</a></h5>
+          <img src="/images/linkedin.svg" width="25px" height="25px">
+        </div>
+      </div>
   </footer>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+  <!-- MODALS (not visible) -->
+  <div class="modal fade" id="capModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Tanuki Games</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          hello
+          <p>
+            For our senior project at West-MEC Central Campus, we were tasked to create a website for a
+            fictional business of our choice. We were also responsible for creating a business proposal
+            as if it were a Shark Tank pitch and how an initial $50,000 investment would be used to keep 
+            the company affloat. As someone with a personal interest in game development, I chose to do 
+            an Independent Computer Game Developer advertising their new Indie game and asking for
+            support on Kickstarter.
+          </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="navbar.js"></script>
+  <div class="modal fade" id="apiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">TFT Assist</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          TFT Assist was a group project where I served as its Team Leader. At the time, we were experimenting
+          with Bootstrap and API's for our first exposure to both. We created a tooltip site for Riot Games' 
+          Teamfight Tactics that would use Riot's developer API to fetch user data to display past
+          games, builds, and end results. It was also designed to serve as a tool to analyse the best builds and 
+          highest win rates to help players find what was the most optimal choices to win.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="rmsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Law and Public Safety RMS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          This project involved myself and a small team of 3 other developers to work with the local
+          Law and Public Safety CTE at our school to create an RMS (Report Manager System) application
+          to help file reports as if they were real officers in the police force. We worked with Firebase/Firestore
+          and Material-UI to create and display database information for the user to write, edit, view, and delete
+          different entries. While serving as the Team Leader, I had my hands mostly in front-end development while 
+          also helping with databases on the back-end.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="modal fade" id="iceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">N-ice Dude</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          For our capstone from our first-year at West-MEC Central Campus, we were tasked to create an interactive
+          site for a business, advertising their products and using a variety of appealing color schemes. While the 
+          project is dated and not modern, it serves as an accurate checkpoint in my progress as a developer and 
+          serves as a good reminder of how far I have come. 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
