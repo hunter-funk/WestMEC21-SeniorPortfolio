@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    /* background-color:; */
+    background-color: #fbe0c4;
 }
 ul{
     list-style: none;
@@ -21,17 +21,21 @@ ul{
 }
 
 #dev, #html5, #library, #api, #ice{
-    background-color: #2978b5;
+    background-color: white;
 }
 
 #Uix, #dev{
     padding-top: 1.5em;
-}
-
-#Uix, #dev{
     padding-bottom: 1.5em;
 }
-
+#Uix:hover{
+    box-shadow: 20px 10px 5px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+#dev:hover{
+    box-shadow: -20px 10px 5px rgba(0,0,0,0.5);
+    z-index: 1;
+}
 #resume{
     padding-top: 3em;
 }
@@ -45,21 +49,57 @@ ul{
 }
 #Uix{
     padding-left: 4em;
-    background-color: #8ab6d6;
+    background-color: white;
+    border-left-width: 2px !important;
+    border-top-width: 2px !important;
+    border-bottom-width: 2px !important;
 }
 #dev{
     padding-right: 4em;
+    border-right-width: 2px !important;
+    border-top-width: 2px !important;
+    border-bottom-width: 2px !important;
+}
+#Uix, #dev{
+    border-style: solid;
+    border-color: black !important;
+    border-width: 2px;
+}
+#Uix p, #dev p{
+    font-size: 1.5em;
 }
 
 /* ///// PREVIOUS WORK ///// */
 #workHead, #skillsHead, #aboutHead{
     padding-bottom: 3em;
     padding-top: 3em;
-    background-color: #fbe0c4;
+    margin-left: 1em;
+    margin-right: 1em;
+    /* background-color: #fbe0c4; */
     margin-bottom: .5em;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
 }
 #capstone, #rms{
-    background-color: #8ab6d6;
+    background-color: white;
+    border-style: solid;
+    border-color: black !important;
+    border-left-width: 2px !important;
+    border-right-width: 2px !important
+}
+#api{
+    border-style:solid;
+    border-color: black !important;
+    border-right-width: 2px !important;
+    border-left-width: 2px !important;
+}
+#ice{
+    border-style: solid;
+    border-color: black !important;
+    border-left-width: 2px !important;
+    border-right-width: 2px !important;
+    border-bottom-width: 2px !important;
 }
 
 /* ///// SKILLS ///// */
@@ -68,12 +108,29 @@ ul{
     padding-left: 0em;
 }
 #cert{
-   background-color: #8ab6d6;
+   background-color: white;
+   border-top-width: 2px !important;
+   border-bottom-width: 2px !important;
+}
+#html5, #cert, #library{
+    border-style: solid;
+    border-color: black !important;
+}
+#html5{
+    border-left-width: 2px !important;
+    border-top-width: 2px !important;
+    border-bottom-width: 2px !important;
+}
+#library{
+    border-right-width: 2px !important;
+    border-top-width: 2px !important;
+    border-bottom-width: 2px !important;
 }
 
 /* ///// CONTACT ///// */
 #contact {
-    background-color: #0061a8;
+    background-color: rgb(46, 46, 46);
+    color: rgb(223, 223, 223);
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
@@ -83,11 +140,11 @@ ul{
 #about{
     padding-left: 5em;
     padding-right: 5em;
-    color: white;
+    /* color: white; */
 }
 #contact a{
     text-decoration: none;
-    color: black;
+    color:rgb(189, 189, 189);
 }
 /* #contact h2{
     font-size: 4em;

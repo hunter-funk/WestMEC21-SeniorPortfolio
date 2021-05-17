@@ -9,8 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet" async />
-
+  <link href="animations.css" rel="stylesheet" async/>
 </head>
+
 <body>
   <!-- /// NAV BAR /// -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -22,16 +23,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li id="navRes" class="nav-item" onclick="focusOn(0)">
+          <li id="navRes" class="nav-item">
             <a class="nav-link" href="#resHead">Resume</a>
           </li>
-          <li id="navSkills" class="nav-item" onclick="focusOn(1)">
+          <li id="navSkills" class="nav-item">
             <a class="nav-link" href="#skillsHead">Skills</a>
           </li>
-          <li id="navWork" class="nav-item" onclick="focusOn(2)">
+          <li id="navWork" class="nav-item">
             <a class="nav-link" href="#workHead">Work</a>
           </li>
-          <li id="navCont" class="nav-item" onclick="focusOn(3)">
+          <li id="navCont" class="nav-item">
             <a class="nav-link" href="#aboutHead">Contact</a>
           </li>
         </ul>
@@ -41,13 +42,14 @@
 
   <!-- /// RESUME /// -->
   <div id="resume" class="row justify-content-lg-center">
-    <h1 id="resHead" class="text-center">My name is Hunter Funk, <br/> and I am a...</h1>
+    <h1 id="resHead" class="text-center"></h1>
     <div id="Uix" class="col-lg-6 border">
       <h2>UI/UX Designer</h2>
       <div class="row">
         <p class="col-sm-8">
           User interactivity is integral to me when designing projects. The layout, prompts, and traversal of the site
-          should have its own flare that does not distract or inhibit the user. Nothing is more frustrating than when navigating
+          should have its own flare that does not distract or inhibit the user. Nothing is more frustrating than when
+          navigating
           a site is its barrier for use and frequent traffic.
         </p>
         <!-- Button trigger modal -->
@@ -57,9 +59,11 @@
       <h2>Front End Developer</h2>
       <div class="row justify-content-end">
         <p class="col-sm-8">
-          A site should be as beautiful as it is to use. What the user sees leaves an impression as the more professional 
-          it looks, the more trustworthy it is. The shopping cart, data on a display, or simply just the colors all affect
-          how a user can percieve your business. 
+          A site should be as beautiful as it is to use. What the user sees leaves an impression as the more
+          professional
+          it looks, the more trustworthy it is. The shopping cart, data on a display, or simply just the colors all
+          affect
+          how a user can percieve your business.
         </p>
       </div>
     </div>
@@ -68,104 +72,120 @@
   <!-- /// SKILLS /// -->
   <div id="skills" class="justify-content-md-center text-center">
     <h1 id="skillsHead">Why I am Qualified</h1>
+    <p><i>Click on each item to learn more...</i></p>
     <div class="row justify-content-lg-center">
       <div id="html5" class="col-md-3 border">
         <h3><u>HTML 5</u></h3>
         <ul id="skillsList">
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have 4 years of experience in developing websites and web applications.">HTML</li>
+            data-bs-content="I have 4 years of experience in developing websites and web applications.">HTML</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have 4 years of experience in styling and formatting applications.">CSS</li>
+            data-bs-content="I have 4 years of experience in styling and formatting applications.">CSS</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have 3 years of experience in full-stack development and object-oriented coding">Javascript</li>
+            data-bs-content="I have 3 years of experience in full-stack development and object-oriented coding">
+            Javascript</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have 2 years of experience in developing websites and web applications.">React.js</li>
+            data-bs-content="I have 2 years of experience in developing websites and web applications.">React.js</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have 2 years of development for real-time application and single-threaded programming">Node.js</li>
+            data-bs-content="I have 2 years of development for real-time application and single-threaded programming">
+            Node.js</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have a year of creating small games within this engine.">Impact.js</li>
+            data-bs-content="I have a year of creating small games within this engine.">Impact.js</li>
         </ul>
       </div>
       <div id="cert" class="col-md-3 border">
         <h3><u>Certifications and Skills</u></h3>
         <ul id="skillsList">
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="This certifies that I have entry-level knowledge in the coding application field.">Microsoft Technology Associate</li>
+            data-bs-content="This certifies that I have entry-level knowledge in the coding application field.">
+            Microsoft Technology Associate</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="As part of my technical school, we learned of workplace safety and protocols.">OSHA Certification</li>
+            data-bs-content="As part of my technical school, we learned of workplace safety and protocols.">OSHA
+            Certification</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="State testing for Coding CTE in my home state of Arizona">CTE Arizona State Certified</li>
+            data-bs-content="State testing for Coding CTE in my home state of Arizona">CTE Arizona State Certified</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="Certified in front-end and back-end development, and protecting user data.">Javascript Specialist</li>
+            data-bs-content="Certified in front-end and back-end development, and protecting user data.">Javascript
+            Specialist</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have utilized both to manage and communicate with fellow coders to finish projects.">Github/GitKraken</li>
+            data-bs-content="I have utilized both to manage and communicate with fellow coders to finish projects.">
+            Github/GitKraken</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I have had numerous experiences working and managing other programmers and helping clients.">Leadership</li>
+            data-bs-content="I have had numerous experiences working and managing other programmers and helping clients.">
+            Leadership</li>
         </ul>
       </div>
       <div id="library" class="col-md-3 border">
         <h3><u>Libraries and Databases</u></h3>
         <ul id="skillsList" class="align-items-center">
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="I utilize Bootstrap for a majority of my projects and am comfortable with its documentation.">Bootstrap</li>
+            data-bs-content="I utilize Bootstrap for a majority of my projects and am comfortable with its documentation.">
+            Bootstrap</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="Utilizes React.js for front-end development.">Material-UI</li>
+            data-bs-content="Utilizes React.js for front-end development.">Material-UI</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="Have knowledge of Moongoose and managing dependencies and data entry.">Mongoose</li>
+            data-bs-content="Have knowledge of Moongoose and managing dependencies and data entry.">Mongoose</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="Capable of managing databases uitilizing Moongoose.">MongoDB</li>
+            data-bs-content="Capable of managing databases uitilizing Moongoose.">MongoDB</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="Have applied knowledge and have used Firebase for clients in the past.">Firebase</li>
+            data-bs-content="Have applied knowledge and have used Firebase for clients in the past.">Firebase</li>
           <li tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom"
-          data-bs-content="Similarly to MongoDB, I am capable of managing databases and retreiving data for web applications.">Firestore</li>
+            data-bs-content="Similarly to MongoDB, I am capable of managing databases and retreiving data for web applications.">
+            Firestore</li>
         </ul>
       </div>
     </div>
   </div>
 
   <!-- /// WORK /// -->
-  <div id="work" class="justify-content-lg-center row">
-    
-      <h1 id="workHead" class="text-center">Previous Work</h1>
-      <div class="col-lg-10">  
-      <div id="examples" class="">
-        
-        <div id="capstone" class="row border align-items-center text-center" data-bs-toggle="modal" data-bs-target="#capModal">
-          <div class="col-sm-5">
+  <div id="work" class="justify-content-lg-center">
+
+    <h1 id="workHead" class="text-center">Previous Work</h1>
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-10">
+        <div id="examples" class="">
+
+          <div id="capstone" class="row border align-items-center text-center" data-bs-toggle="modal"
+            data-bs-target="#capModal">
+            <div class="col-sm-5">
               <h3>Capstone Project - Tanuki Games</h3>
+            </div>
+            <div id="capPic" class="col">
+              <img src="images/capstone_banner.png" class="img-fluid" />
+            </div>
           </div>
-          <div id="capPic" class="col">
-              <img src="images/capstone_banner.png" class="img-fluid"/>
+
+          <div id="api" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal"
+            data-bs-target="#apiModal">
+            <div id="apiPic" class="col">
+              <img src="images/api_banner.png" class="img-fluid" />
+            </div>
+            <div class="col-sm-5">
+              <h3>API Site - TFT Assist</h3>
+            </div>
           </div>
+
+          <div id="rms" class="row border align-items-center text-center" data-bs-toggle="modal"
+            data-bs-target="#rmsModal">
+            <div class="col-sm-5">
+              <h3>RMS Project - Law and Public Safety</h3>
+            </div>
+            <div id="rmsPic" class="col">
+              <img src="images/firestore.png" class="img-fluid" />
+            </div>
+          </div>
+
+          <div id="ice" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal"
+            data-bs-target="#iceModal">
+            <div id="apiPic" class="col">
+              <img src="images/ice_banner.png" class="img-fluid" />
+            </div>
+            <div class="col-sm-5">
+              <h3>N-ice Dude - 1st Year Capstone</h3>
+            </div>
+          </div>
+
         </div>
-        
-        <div id="api" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal" data-bs-target="#apiModal">
-          <div id="apiPic" class="col">
-              <img src="images/api_banner.png" class="img-fluid"/>
-          </div>
-          <div class="col-sm-5">
-            <h3>API Site - TFT Assist</h3>
-          </div>
-        </div>
-        
-        <div id="rms" class="row border align-items-center text-center" data-bs-toggle="modal" data-bs-target="#rmsModal">
-          <div class="col-sm-5">
-            <h3>RMS Project - Law and Public Safety</h3>
-          </div>
-          <div id="rmsPic" class="col">
-              <img src="images/firestore.png" class="img-fluid"/>
-          </div>
-        </div>
-        
-        <div id="ice" class="row border justify-content-end text-center align-items-center" data-bs-toggle="modal" data-bs-target="#iceModal">
-          <div id="apiPic" class="col">
-              <img src="images/ice_banner.png" class="img-fluid"/>
-          </div>
-          <div class="col-sm-5">
-            <h3>N-ice Dude - 1st Year Capstone</h3>
-          </div>
-        </div>
-      
       </div>
     </div>
   </div>
@@ -174,41 +194,42 @@
   <h1 id="aboutHead" class="text-center">Contact Me</h1>
   <footer class="row" id="contact">
     <div class="col-sm-9">
-        <p id="about">
-         <i> 
-           My name is Hunter Funk and I have always had a passion for video games. I am an intelligent
-          and hardworking person, so life was very stressful with how much work I had and fulfilling the 
+      <p id="about">
+        <i>
+          My name is Hunter Funk and I have always had a passion for video games. I am an intelligent
+          and hardworking person, so life was very stressful with how much work I had and fulfilling the
           expectations people had around me. However, video games have always served as an escape for me
           to relax and get away from my responsibilities for a moment. They allow players all over the world
           to occupy themselves and explore their grandest fantasies in a way other media cannot. I decided
           that I wanted to become a developer to share with people new experiences and hours of escape that
-          developers before my time gave me. I began Computer Programming in high school as part of a CTE 
-          school, West-MEC Central Campus, to take any opportunity I could to get started on my journey. 
-          While their I learned copious amounts about professionalism, Web Development, and how coding 
-          languages work. I am self-driven and have taken a new passion in learning digital art as well, 
+          developers before my time gave me. I began Computer Programming in high school as part of a CTE
+          school, West-MEC Central Campus, to take any opportunity I could to get started on my journey.
+          While their I learned copious amounts about professionalism, Web Development, and how coding
+          languages work. I am self-driven and have taken a new passion in learning digital art as well,
           and I am fascinated by animation and digital illustration. I look forward to hearing what projects
-          and passions you would share with me. I currently attend Arizona State University at its Tempe 
+          and passions you would share with me. I currently attend Arizona State University at its Tempe
           campus while studying for a BS in Computer Science.
         </i>
-        </p>
+      </p>
     </div>
     <div class="col">
-      <img id="contactPic" class="justify-content-center align-middle" src="images/aigis.png" width="200px" height="200px"/>
+      <img id="contactPic" class="justify-content-center align-middle" src="images/aigis.png" width="200px"
+        height="200px" />
     </div>
     <div id="contact" class="row text-center justify-content-center">
-        <div class="col-4">
-          <h5>hunter.d.funk@gmail.com</h5>
-          <img src="/images/inboxes.svg" width="25px" height="25px">
-        </div>
-        <div class="col-4">
-          <h5><a href="https://github.com/hunter-funk">github.com/hunter-funk</a></h5>
-          <img src="/images/github.svg" width="25px" height="25px">
-        </div>
-        <div class="col-4">
-          <h5><a href="https://www.linkedin.com/in/hunter-funk-89a5081b6">Linkedin</a></h5>
-          <img src="/images/linkedin.svg" width="25px" height="25px">
-        </div>
+      <div class="col-4">
+        <h5>hunter.d.funk@gmail.com</h5>
+        <img src="/images/inboxes.svg" width="25px" height="25px">
       </div>
+      <div class="col-4">
+        <h5><a href="https://github.com/hunter-funk">github.com/hunter-funk</a></h5>
+        <img src="/images/github.svg" width="25px" height="25px">
+      </div>
+      <div class="col-4">
+        <h5><a href="https://www.linkedin.com/in/hunter-funk-89a5081b6">Linkedin</a></h5>
+        <img src="/images/linkedin.svg" width="25px" height="25px">
+      </div>
+    </div>
   </footer>
 
 
@@ -224,8 +245,8 @@
           <p>
             For our senior project at West-MEC Central Campus, we were tasked to create a website for a
             fictional business of our choice. We were also responsible for creating a business proposal
-            as if it were a Shark Tank pitch and how an initial $50,000 investment would be used to keep 
-            the company affloat. As someone with a personal interest in game development, I chose to do 
+            as if it were a Shark Tank pitch and how an initial $50,000 investment would be used to keep
+            the company affloat. As someone with a personal interest in game development, I chose to do
             an Independent Computer Game Developer advertising their new Indie game and asking for
             support on Kickstarter.
           </p>
@@ -246,9 +267,9 @@
         </div>
         <div class="modal-body">
           TFT Assist was a group project where I served as its Team Leader. At the time, we were experimenting
-          with Bootstrap and API's for our first exposure to both. We created a tooltip site for Riot Games' 
+          with Bootstrap and API's for our first exposure to both. We created a tooltip site for Riot Games'
           Teamfight Tactics that would use Riot's developer API to fetch user data to display past
-          games, builds, and end results. It was also designed to serve as a tool to analyse the best builds and 
+          games, builds, and end results. It was also designed to serve as a tool to analyse the best builds and
           highest win rates to help players find what was the most optimal choices to win.
         </div>
         <div class="modal-footer">
@@ -257,7 +278,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="modal fade" id="rmsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -270,7 +291,7 @@
           Law and Public Safety CTE at our school to create an RMS (Report Manager System) application
           to help file reports as if they were real officers in the police force. We worked with Firebase/Firestore
           and Material-UI to create and display database information for the user to write, edit, view, and delete
-          different entries. While serving as the Team Leader, I had my hands mostly in front-end development while 
+          different entries. While serving as the Team Leader, I had my hands mostly in front-end development while
           also helping with databases on the back-end.
         </div>
         <div class="modal-footer">
@@ -289,9 +310,9 @@
         </div>
         <div class="modal-body">
           For our capstone from our first-year at West-MEC Central Campus, we were tasked to create an interactive
-          site for a business, advertising their products and using a variety of appealing color schemes. While the 
-          project is dated and not modern, it serves as an accurate checkpoint in my progress as a developer and 
-          serves as a good reminder of how far I have come. 
+          site for a business, advertising their products and using a variety of appealing color schemes. While the
+          project is dated and not modern, it serves as an accurate checkpoint in my progress as a developer and
+          serves as a good reminder of how far I have come.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -301,10 +322,12 @@
   </div>
 
   <!-- SCRIPTS -->
+  <script src="resHead.js" async></script>
+  <script src="lift.js" async></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-    <script src="popovers.js" async></script>
+  <script src="popovers.js" async></script>
 
 </body>
 
