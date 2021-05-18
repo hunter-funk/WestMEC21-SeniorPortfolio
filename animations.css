@@ -1,12 +1,76 @@
 /* @keyframes lift{
-    0% {box-shadow: 0px 0px 0px black;}
-    25%{box-shadow: 2px 2px 1px black;}
-    50%{box-shadow: 4px 4px 2px black;}
-    75%{box-shadow: 8px 8px 4px black};
-    100%{box-shadow: 16px 16px 8px black;}
+    0% {box-shadow: 5px -5px 5px rgba(0,0,0,0.5);}
+    12%{box-shadow: 10px -10px 10px rgba(0,0,0,0.5);}
+    25%{box-shadow: 15px -15px 10px rgba(0,0,0,0.5);}
+    37%{box-shadow: 20px -20px 10px rgba(0,0,0,0.5);}
+    50%{box-shadow: 25px -25px 10px rgba(0,0,0,0.5);}
+    62%{box-shadow: 20px -20px 10px rgba(0,0,0,0.5);}
+    75%{box-shadow: 15px -15px 10px rgba(0,0,0,0.5);}
+    88%{box-shadow: 10px -10px 10px rgba(0,0,0,0.5);}
+    100%{box-shadow: 5px -5px 5px rgba(0,0,0,0.5);}
+}
+@keyframes altLift{
+    0% {box-shadow: 5px -5px 5px rgba(0,0,0,0.5);}
+    25%{box-shadow: 10px -10px 10px rgba(0,0,0,0.5);}
+    50%{box-shadow: 15px -15px 10px rgba(0,0,0,0.5);}
+    75%{box-shadow: 20px -20px 10px rgba(0,0,0,0.5);}
+    100%{box-shadow: 25px -25px 10px rgba(0,0,0,0.5); background-color: white;}
+}
+@keyframes liftOpp{
+    0% {box-shadow: -5px -5px 5px rgba(0,0,0,0.5);}
+    12%{box-shadow: -10px -10px 10px rgba(0,0,0,0.5);}
+    25%{box-shadow: -15px -15px 10px rgba(0,0,0,0.5);}
+    37%{box-shadow: -20px -20px 10px rgba(0,0,0,0.5);}
+    50%{box-shadow: -25px -25px 10px rgba(0,0,0,0.5);}
+    62%{box-shadow: -20px -20px 10px rgba(0,0,0,0.5);}
+    75%{box-shadow: -15px -15px 10px rgba(0,0,0,0.5);}
+    88%{box-shadow: -10px -10px 10px rgba(0,0,0,0.5);}
+    100%{box-shadow: -5px -5px 5px rgba(0,0,0,0.5);}
+}
+@keyframes altLiftOpp{
+    0% {box-shadow: -5px -5px 5px rgba(0,0,0,0.5);}
+    25%{box-shadow: -10px -10px 10px rgba(0,0,0,0.5);}
+    50%{box-shadow: -15px -15px 10px rgba(0,0,0,0.5);}
+    75%{box-shadow: -20px -20px 10px rgba(0,0,0,0.5);}
+    100%{box-shadow: -25px -25px 10px rgba(0,0,0,0.5); background-color: white;}
+}
+#Uix:hover{
+    z-index: 1;
+    animation-name: altLift;
+    animation-duration: .25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#dev:hover{
+    z-index: 1;
+    animation-name: altLiftOpp;
+    animation-duration:  .25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+} */
+
+@keyframes clickEffect{
+    0%{
+        opacity: 1;
+        width: 0.5em; height:0.5em;
+        margin: -0.25em;
+        border-width: 0.5em;
+    }
+    100%{
+        opacity: 0.2;
+        width: 15em; height: 15em;
+        margin: -7.5em;
+        border-width: 0.03em;
+    }
 }
 
-#Uix:hover{
-    animation-name: lift;
-    animation-duration: 3s;
-} */
+div.clickEffect{
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 50%;
+    animation: clickEffect 0.4s ease-out;
+    z-index: 99999;
+}

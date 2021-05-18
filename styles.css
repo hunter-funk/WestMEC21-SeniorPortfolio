@@ -28,14 +28,7 @@ ul{
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
-#Uix:hover{
-    box-shadow: 20px 10px 5px rgba(0,0,0,0.5);
-    z-index: 1;
-}
-#dev:hover{
-    box-shadow: -20px 10px 5px rgba(0,0,0,0.5);
-    z-index: 1;
-}
+
 #resume{
     padding-top: 3em;
 }
@@ -48,17 +41,30 @@ ul{
     margin-bottom: .5em;
 }
 #Uix{
+    transition: box-shadow .5s, background-color .5s;
     padding-left: 4em;
-    background-color: white;
+    background-color: rgb(189, 189, 189);
     border-left-width: 2px !important;
     border-top-width: 2px !important;
     border-bottom-width: 2px !important;
 }
+#Uix:hover{
+    z-index: 1;
+    background-color: white;
+    box-shadow: 25px -25px 10px rgba(0,0,0,0.5);
+}
 #dev{
+    transition: box-shadow .5s, background-color .5s, font-size .5s;
+    background-color: rgb(189, 189, 189);
     padding-right: 4em;
     border-right-width: 2px !important;
     border-top-width: 2px !important;
     border-bottom-width: 2px !important;
+}
+#dev:hover{
+    z-index: 1;
+    background-color: white;
+    box-shadow: -25px -25px 10px rgba(0,0,0,0.5);
 }
 #Uix, #dev{
     border-style: solid;
@@ -81,25 +87,41 @@ ul{
     border-color: black;
     background-color: white;
 }
+#work p{
+    font-size: 1.2em;
+}
 #capstone, #rms{
-    background-color: white;
+    transition: background-color .5s;
+    background-color: rgb(189, 189, 189);
     border-style: solid;
     border-color: black !important;
     border-left-width: 2px !important;
     border-right-width: 2px !important
 }
 #api{
+    transition: background-color .5s;
+    background-color: rgb(189, 189, 189);
     border-style:solid;
     border-color: black !important;
     border-right-width: 2px !important;
     border-left-width: 2px !important;
 }
 #ice{
+    transition: background-color .5s;
+    background-color: rgb(189, 189, 189);
     border-style: solid;
     border-color: black !important;
     border-left-width: 2px !important;
     border-right-width: 2px !important;
     border-bottom-width: 2px !important;
+}
+#capstone:hover, #rms:hover{
+    z-index: 1;
+    background-color: white;
+}
+#ice:hover, #api:hover{
+    z-index: 1;
+    background-color: white;
 }
 
 /* ///// SKILLS ///// */
@@ -108,23 +130,37 @@ ul{
     padding-left: 0em;
 }
 #cert{
-   background-color: white;
-   border-top-width: 2px !important;
-   border-bottom-width: 2px !important;
+    transition: background-color .5s;
+    background-color: rgb(189, 189, 189);
+    border-top-width: 2px !important;
+    border-bottom-width: 2px !important;
+}
+#cert:hover{
+    background-color: white;
 }
 #html5, #cert, #library{
     border-style: solid;
     border-color: black !important;
 }
 #html5{
+    transition: background-color .5s;
+    background-color: rgb(189, 189, 189);
     border-left-width: 2px !important;
     border-top-width: 2px !important;
     border-bottom-width: 2px !important;
 }
+#html5:hover{
+    background-color: white;
+}
 #library{
+    transition: background-color .5s;
+    background-color: rgb(189, 189, 189);
     border-right-width: 2px !important;
     border-top-width: 2px !important;
     border-bottom-width: 2px !important;
+}
+#library:hover{
+    background-color: white;
 }
 
 /* ///// CONTACT ///// */
@@ -140,11 +176,12 @@ ul{
 #about{
     padding-left: 5em;
     padding-right: 5em;
-    /* color: white; */
+    line-height: 2em;
+    color: #fbe0c4;
 }
 #contact a{
     text-decoration: none;
-    color:rgb(189, 189, 189);
+    color: #fbe0c4;
 }
 /* #contact h2{
     font-size: 4em;
@@ -156,3 +193,4 @@ ul{
     padding-right: 4em;
     padding-top: 0.1em;
 } */
+
