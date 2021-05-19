@@ -8,6 +8,7 @@ ul{
 }
 #resume, #skills, #work{
     padding-bottom: 1em;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* ///// SKILLS ///// */
@@ -77,6 +78,7 @@ ul{
 
 /* ///// PREVIOUS WORK ///// */
 #workHead, #skillsHead, #aboutHead{
+    font-family: 'Newsreader', serif;
     padding-bottom: 3em;
     padding-top: 3em;
     margin-left: 1em;
@@ -177,11 +179,11 @@ ul{
     padding-left: 5em;
     padding-right: 5em;
     line-height: 2em;
-    color: #fbe0c4;
+    color: rgb(18, 146, 163);
 }
 #contact a{
     text-decoration: none;
-    color: #fbe0c4;
+    color: rgb(18, 146, 163);
 }
 /* #contact h2{
     font-size: 4em;
