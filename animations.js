@@ -1,3 +1,5 @@
+// exported from https://fdossena.com/?p=html5cool/clickfx/i.frag
+
 function clickEffect(e){
       var d=document.createElement("div");
       d.className="clickEffect";

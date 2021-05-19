@@ -1,3 +1,5 @@
+// exported from https://codepen.io/LaithHaleem/pen/wzyrBd
+
 var string = "My name is Hunter Funk, and I am a...";
 var str = string.split("");
 var el = document.getElementById('resHead');
